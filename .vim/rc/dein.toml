@@ -1,0 +1,52 @@
+# [dein.toml]
+
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+
+## Display Visual
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_add = '''
+  autocmd VimEnter * execute 'NERDTree'
+'''
+
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+
+[[plugins]]
+repo = 'Dru89/vim-adventurous'
+hook_add = '''
+  au MyAutoCmd VimEnter * nested colorscheme adventurous
+'''
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+hook_add = '''
+  set laststatus=2
+  set showmode
+  set showcmd
+  set ruler
+'''
+
+[[plugins]]
+repo = 'bronson/vim-trailing-whitespace'
+
+
+## Snipets
+
+[[plugins]]
+repo = 'Shougo/neocomplete.vim'
+
+[[plugins]]
+repo = 'Shougo/neosnippet.vim'
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+
+
+## JavaScript
+
+[[plugins]]
+repo = 'posva/vim-vue'
